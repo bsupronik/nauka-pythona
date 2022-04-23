@@ -270,7 +270,7 @@ parametr określa ciąg znaków, który zostanie wstawiony w miejsce pierwszego.
 ```
 
 Opcjonalnie możemy w `replace()` określić, ile razy podmiana ma zostać wykonana.
-```pycon
+```python
 >>> s = 'Ala ma kota.'
 >>> s.replace('a', 'x', 1)
 'Alx ma kota.'
