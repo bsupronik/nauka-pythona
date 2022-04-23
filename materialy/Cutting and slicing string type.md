@@ -184,3 +184,94 @@ ciągu znaków, natomiast domyślna wartość indeksu końcowego wskazuje na poc
 >>>
 ```
 
+## 5. Metody `split()` i `rsplit()`
+Python posiada wbudowane metody, które pozwalają na przekształcenie ciągu znaków w
+listę na podstawie wskazanego przez użytkownika delimitera. Służy do tego funkcja
+`split()`. Domyślnym delimiterem jest spacja.
+
+```pycon
+>>> s = 'foo bar baz'
+>>> s.split()
+['foo', 'bar', 'baz']
+>>> s
+'foo bar baz' # jak widzimy, metoda nie nadpisuje zmiennej
+```
+
+Możemy również określić swój własny delimiter w następujący sposób:
+```pycon
+>>> s = 'foo:bar:baz'
+>>> s.split(';')
+['foo:bar:baz']
+```
+
+Co ciekawe, za pomocą funkcji `split()` możemy zwrócić elementy bezpośrednio do
+zmiennych w następujący sposób:
+```pycon
+>>> s = 'foo bar baz'
+>>> a, b, c = s.split()
+>>> a
+'foo'
+>>> b
+'bar'
+>>> c
+'baz'
+```
+
+Może zaistnieć sytuacja, w której będziemy chcieli podzielić ciąg znaków określoną
+ilość razy. Np chcemy, aby `split()` zadziałał tylko jeden raz. Możemy to osiągnąć
+za pomocą poniższego kodu:
+
+```pycon
+>>> s = 'foo:bar:baz'
+>>> s.split(':', 1)
+['foo', 'bar:baz']
+```
+
+Istnieje jeszcze jeden wariant tej funkcji. Nazywa się `rsplit()`. Działa identycznie
+jak `split()`, ale od prawej strony.
+
+```pycon
+>>> s = 'foo:bar:baz'
+>>> s.rsplit(':', 1)
+['foo:bar', 'baz']
+```
+
+## 6. Metody `partition()` i `rpartition()`
+
+Metoda, która działa bardzo podobnie do metody `split()`. Zwraca natomiast krotkę
+(tuple) zamiast listy. Dodatkowo wykonuje się zawsze tylko raz i zachowuje delimiter
+w zwracanej krotce.
+```pycon
+>>> s = 'foo:bar:baz'
+>>> s.partition(':')
+('foo', ':', 'bar:baz')
+```
+
+Metoda `partition()` również posiada wariant działający od prawej strony — metodę
+`rpartition()`
+
+```pycon
+>>> s = 'foo:bar:baz'
+>>> s.rpartition(':')
+('foo:bar', ':', 'baz')
+```
+
+## 7. Metoda `replace()`
+Przydatna metoda służąca do podmieniania. Jej działanie jest bardzo proste. Jako 
+pierwszy parametr podajemy ciąg znaków, który ma zostać usunięty, natomiast drugi 
+parametr określa ciąg znaków, który zostanie wstawiony w miejsce pierwszego.
+
+```pycon
+>>> s = 'Ala ma kota.'
+>>> s.replace('a', 'x')
+'Alx mx kotx.' #podmiana wszystkich liter 'a' na litery 'x'
+>>> s.replace('Ala', 'Magda')
+'Magda ma kota.' #metoda podmienia nie tylko pojedyncze litery
+```
+
+Opcjonalnie możemy w `replace()` określić, ile razy podmiana ma zostać wykonana.
+```pycon
+>>> s = 'Ala ma kota.'
+>>> s.replace('a', 'x', 1)
+'Alx ma kota.'
+```
