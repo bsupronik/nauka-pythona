@@ -60,7 +60,7 @@ Tak naprawdę tworzymy sekwencję, której każdy element (znak) ma przypisany s
 
 Możemy więc uzyskać dostęp do każdej litery przez określenie jej indeksu.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[1]
 'o'
@@ -69,7 +69,7 @@ Możemy więc uzyskać dostęp do każdej litery przez określenie jej indeksu.
 Jeśli chcemy, możemy wywoływać również indeksy ujemne. Zaczniemy wtedy wskazywać litery od końca ciągu
 znaków. Np. indeks -1 wywoła nam ostatnią literę, analogicznie indeks -3 wywoła literę trzecią od końca itd.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[-1]
 'n'
@@ -85,7 +85,7 @@ Pamiętajmy, że typ string w Pythonie, to typ niemutowalny. Oznacza to, że nie
 ciągu znaków poprzez przypisanie do danego indeksu. Poniższy fragment kodu wywoła następujący błąd:
 
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[2] = 'q'
 Traceback (most recent call last):
@@ -98,7 +98,7 @@ Co, jeśli chcemy wyciąć z ciągu znaków fragment o określonej przez nas dł
 możliwość w sposób prosty i intuicyjny. Wystarczy, że do indeksu znaku startowego, dodamy indeks znaku
 końcowego.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[2:6]
 'nath'
@@ -113,7 +113,7 @@ Python rozpocznie wycinanie od indeksu zerowego. W przypadku pominięcia końca 
 ostatnim ideksie włącznie. Jeśli pominiemy oba indeksy, Python zwróci nam cały string. W praktyce nie stosuje
 się tego typu zapisu.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[:3]
 'Jon'
@@ -126,7 +126,7 @@ się tego typu zapisu.
 Przy wycinaniu możemy również stosować indeksy ujemne. Musimy wtedy pamiętać, że indeks startowy powinien
 być niższy niż indeks końcowy.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[-6:-2]
 'nath'
@@ -140,7 +140,7 @@ Ostatnim — trzecim — parametrem, który możemy określić przy wycinaniu, j
 "przeskoczyć" po każdym wyciętym znaku. Ten parametr również może zostać pominięty. Domyślnie przyjmuje on
 wartość 1.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[2:6]
 'nath'
@@ -157,7 +157,7 @@ Jak widzimy w ostatniej linii powyższego przykładu, zostały nam zwrócone zna
 Wartość trzeciego parametru może być również ujemna. W takim wypadku Python zacznie odczytywać znaki od
 końca stringa.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[6:2:-1]
 'ahta'
@@ -166,7 +166,7 @@ końca stringa.
 Jako że poruszamy się przez ciąg znaków od jego końca, tym razem indeks startowy powinien być większy
 od indeksu końcowego. W przeciwnym wypadku Python nie zwróci nam nic.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[2:6:-1]
 ''
@@ -175,7 +175,7 @@ od indeksu końcowego. W przeciwnym wypadku Python nie zwróci nam nic.
 Jeśli trzeci parametr (krok) jest ujemny, wtedy domyślna wartość indeksu startowego wskazuje na koniec 
 ciągu znaków, natomiast domyślna wartość indeksu końcowego wskazuje na początek ciągu znaków.
 
-```pycon
+```python
 >>> s = 'Jonathan'
 >>> s[4::-1]
 'tanoJ'
@@ -189,7 +189,7 @@ Python posiada wbudowane metody, które pozwalają na przekształcenie ciągu zn
 listę na podstawie wskazanego przez użytkownika delimitera. Służy do tego funkcja
 `split()`. Domyślnym delimiterem jest spacja.
 
-```pycon
+```python
 >>> s = 'foo bar baz'
 >>> s.split()
 ['foo', 'bar', 'baz']
@@ -198,7 +198,7 @@ listę na podstawie wskazanego przez użytkownika delimitera. Służy do tego fu
 ```
 
 Możemy również określić swój własny delimiter w następujący sposób:
-```pycon
+```python
 >>> s = 'foo:bar:baz'
 >>> s.split(';')
 ['foo:bar:baz']
@@ -206,7 +206,7 @@ Możemy również określić swój własny delimiter w następujący sposób:
 
 Co ciekawe, za pomocą funkcji `split()` możemy zwrócić elementy bezpośrednio do
 zmiennych w następujący sposób:
-```pycon
+```python
 >>> s = 'foo bar baz'
 >>> a, b, c = s.split()
 >>> a
@@ -221,7 +221,7 @@ Może zaistnieć sytuacja, w której będziemy chcieli podzielić ciąg znaków 
 ilość razy. Np chcemy, aby `split()` zadziałał tylko jeden raz. Możemy to osiągnąć
 za pomocą poniższego kodu:
 
-```pycon
+```python
 >>> s = 'foo:bar:baz'
 >>> s.split(':', 1)
 ['foo', 'bar:baz']
@@ -230,7 +230,7 @@ za pomocą poniższego kodu:
 Istnieje jeszcze jeden wariant tej funkcji. Nazywa się `rsplit()`. Działa identycznie
 jak `split()`, ale od prawej strony.
 
-```pycon
+```python
 >>> s = 'foo:bar:baz'
 >>> s.rsplit(':', 1)
 ['foo:bar', 'baz']
@@ -241,7 +241,7 @@ jak `split()`, ale od prawej strony.
 Metoda, która działa bardzo podobnie do metody `split()`. Zwraca natomiast krotkę
 (tuple) zamiast listy. Dodatkowo wykonuje się zawsze tylko raz i zachowuje delimiter
 w zwracanej krotce.
-```pycon
+```python
 >>> s = 'foo:bar:baz'
 >>> s.partition(':')
 ('foo', ':', 'bar:baz')
@@ -250,7 +250,7 @@ w zwracanej krotce.
 Metoda `partition()` również posiada wariant działający od prawej strony — metodę
 `rpartition()`
 
-```pycon
+```python
 >>> s = 'foo:bar:baz'
 >>> s.rpartition(':')
 ('foo:bar', ':', 'baz')
@@ -261,7 +261,7 @@ Przydatna metoda służąca do podmieniania. Jej działanie jest bardzo proste. 
 pierwszy parametr podajemy ciąg znaków, który ma zostać usunięty, natomiast drugi 
 parametr określa ciąg znaków, który zostanie wstawiony w miejsce pierwszego.
 
-```pycon
+```python
 >>> s = 'Ala ma kota.'
 >>> s.replace('a', 'x')
 'Alx mx kotx.' #podmiana wszystkich liter 'a' na litery 'x'
