@@ -13,13 +13,9 @@ Po instalacji interpretera przechodzimy do wyboru IDE, czyli zintegrowanego śro
 ### a) PyCharm
 [Pobierz PyCharm.](https://www.jetbrains.com/pycharm/download/)
 
-![Okno główne PyCharm](./screenshots/pycharm64_FgvggH4xx3.png)
-
 W mojej opinii zdecydowany faworyt deklasujący rywali pod względem funkcjonalności. Darmowa wersja (community) jest idealnym produktem do nauki Pythona i posiada mnóstwo wbudowanych integracji, możliwość zainstalowania pluginów stworzonych przez społeczność, możliwość tworzenia indywidualnych wirtualnych środowisk dla poszczególnych projektów i wiele innych funkcji.
 
 ### b) Spyder
-
-![Okno główne Spyder](./screenshots/img.png)
 
 Idealna alternatywa dla osób lubiących nieco lżejsze IDE. Zdecydowaną zaletą tego programu jest szybkość jego działania oraz bardzo przejrzysty i czytelny variable explorer, czyli eksplorator zmiennych, w którym możemy podejrzeć i zmodyfikować stan obiektów obecnie znajdujących się w przestrzeni nazw. Pomocne przy debugowaniu programu.
 
