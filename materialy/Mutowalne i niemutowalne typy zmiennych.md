@@ -1,5 +1,17 @@
 # Mutowalne i niemutowalne typy zmiennych
 Podsumowanie: artykuł opisuje, czym są mutowalne i niemutowalne typy zmiennych w Pythonie
+
+## Spis treści
+- [1. Wprowadzenie](#1-wprowadzenie)
+- [2. Zmienne niemutowalne](#2-zmienne-niemutowalne)
+  * [a) Przykłady zmiennych niemutowalnych](#a-przykłady-zmiennych-niemutowalnych)
+  * [b) Zmienne niemutowalne w praktyce](#b-zmienne-niemutowalne-w-praktyce)
+- [3. Zmienne mutowalne](#3-zmienne-mutowalne)
+  * [a) Przykłady zmiennych mutowalnych](#a-przykłady-zmiennych-mutowalnych)
+  * [b) Zmienne mutowalne w praktyce](#b-zmienne-mutowalne-w-praktyce)
+- [4. Pułapki związane z deklaracją zmiennych](#4-pułapki-związane-z-deklaracją-zmiennych)
+- [5. Jednoczesne używanie typów mutowalnych i niemutowalnych](#5-jednoczesne-używanie-typów-mutowalnych-i-niemutowalnych)
+
 ## 1. Wprowadzenie
 W Pythonie wszystko jest obiektem, również zmienne deklarowane przez nas podczas pisania kodu. Każdy z obiektów posiada swój określony stan. Niektóre typy zmiennych pozwalają na modyfikację swojego stanu. Takie typy nazywamy typami `mutowalnymi`. Jak łatwo się domyślić, istnieją również typy zmiennych, które nie pozwalają na modyfikację swojego stanu. Takie typy nazywamy typami `niemutowalnymi`.
 

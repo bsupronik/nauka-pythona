@@ -2,6 +2,30 @@
 
 Podsumowanie: artykuł zawiera wskazówki dot. instalacji interpretera Python oraz dwóch najbardziej popularnych IDE: Spyder oraz PyCharm.
 
+## Spis treści
+
+  * [1. Interpreter Pythona](#1-interpreter-pythona)
+  * [2. IDE](#2-ide)
+    + [PyCharm](#pycharm)
+    + [Spyder](#spyder)
+  * [3. Instalacja bibliotek](#3-instalacja-bibliotek)
+  * [4. Najciekawsze biblioteki](#4-najciekawsze-biblioteki)
+    + [Pandas](#pandas)
+    + [Numpy](#numpy)
+    + [BeautifulSoup4](#beautifulsoup4)
+    + [lxml](#lxml)
+    + [Selenium](#selenium)
+    + [Scrapy](#scrapy)
+    + [Requests](#requests)
+  * [5. Inne przydatne narzędzia](#5-inne-przydatne-narz-dzia)
+    + [Git](#git)
+    + [GitHub](#github)
+    + [Postman](#postman)
+    + [Sublime Text](#sublime-text)
+    + [Total Commander](#total-commander)
+    + [regex101](#regex101)
+    + [mRemoteNG](#mremoteng)
+
 ## 1. Interpreter Pythona
 Podstawową rzeczą, której potrzebujemy, aby programować w języku Python, jest interpreter. Najnowszą wersję można pobrać na [oficjalnej stronie.](https://www.python.org/downloads/)
 
@@ -10,12 +34,12 @@ W swoich projektach obecnie używam interpretera w wersji 3.9.10, który można 
 ## 2. IDE
 Po instalacji interpretera przechodzimy do wyboru IDE, czyli zintegrowanego środowiska programistycznego. Na rynku istnieją dziesiątki środowisk do Pythona, ja skupię się tutaj tylko na dwóch, w których pracowało mi się najlepiej.
 
-### a) PyCharm
+### PyCharm
 [Pobierz PyCharm.](https://www.jetbrains.com/pycharm/download/)
 
 W mojej opinii zdecydowany faworyt deklasujący rywali pod względem funkcjonalności. Darmowa wersja (community) jest idealnym produktem do nauki Pythona i posiada mnóstwo wbudowanych integracji, możliwość zainstalowania pluginów stworzonych przez społeczność, możliwość tworzenia indywidualnych wirtualnych środowisk dla poszczególnych projektów i wiele innych funkcji.
 
-### b) Spyder
+### Spyder
 
 Idealna alternatywa dla osób lubiących nieco lżejsze IDE. Zdecydowaną zaletą tego programu jest szybkość jego działania oraz bardzo przejrzysty i czytelny variable explorer, czyli eksplorator zmiennych, w którym możemy podejrzeć i zmodyfikować stan obiektów obecnie znajdujących się w przestrzeni nazw. Pomocne przy debugowaniu programu.
 
@@ -31,7 +55,7 @@ Po zainstalowaniu wszystkich plików wystarczy wpisać w terminalu `spyder`, aby
 ```commandline
 spyder
 ```
-## 3. Instalacja zewnętrznych bibliotek
+## 3. Instalacja bibliotek
 
 Jedną z olbrzymich zalet Pythona jest mnogość zewnętrznych bibliotek, niejednokrotnie potężnych narzędzi, które są nieustannie rozwijane przez społeczność. Większość z tych bibliotek jest dostępna za darmo. Aby je zainstalować, najczęściej wystarczy użyć komendy `pip`. Załóżmy, że chcemy pobrać i rozpakować bibliotekę o nazwie `pandas`. W tym celu wystarczy, że w terminalu wpiszemy komendę:
 ```commandline

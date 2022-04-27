@@ -6,6 +6,15 @@ typem niemutowalnym. Oznacza to, że aby zmodyfikować ciąg znaków, należy re
 modyfikacji przypisać do innej zmiennej. Poniżej opisuję kilka najpopularniejszych
 i najbardziej przydatnych sposobów modyfikacji ciągów znaków.
 
+## Spis treści
+- [1. Unpacking (rozpakowywanie)](#1-unpacking-rozpakowywanie)
+- [2. Dostęp do znaków z użyciem indeksu](#2-dostęp-do-znaków-z-użyciem-indeksu)
+- [3. Slicing (wycinanie)](#3-slicing-wycinanie)
+- [4. Przeskakiwanie znaków przy wycinaniu](#4-przeskakiwanie-znaków-przy-wycinaniu)
+- [5. Metody `split()` i `rsplit()`](#5-metody-split-i-rsplit)
+- [6. Metody `partition()` i `rpartition()`](#6-metody-partition-i-rpartition)
+- [7. Metoda `replace()`](#7-metoda-replace)
+
 ## 1. Unpacking (rozpakowywanie)
 Jednym z najprostszych sposobów jest wypakowanie znaków do osobnych zmiennych w 
 następujący sposób:
