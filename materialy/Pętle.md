@@ -11,13 +11,13 @@ Podsumowanie: w poniższym artykule omawiamy pętle `for` oraz `while` w języku
 - [Pętla `for`](#pętla-for)
 - [Pętla `while`](#pętla-while)
 - [Dodatkowe instrukcje oraz metody](#dodatkowe-instrukcje-oraz-metody)
-  * [Metoda `range(start, stop, step)`](#metoda-range-start-stop-step)
-  * [Metoda `enumerate(interable, start)`](#metoda-enumerate-interable-start)
-  * [Metoda `map(func, iterable)`](#metoda-map-func-iterable)
+  * [Metoda `range(start, stop, step)`](#metoda-rangestart-stop-step)
+  * [Metoda `enumerate(interable, start)`](##metoda-enumerateinterable-start)
+  * [Metoda `map(func, iterable)`](#metoda-mapfunc-iterable)
   * [Instrukcja `break`](#instrukcja-break)
   * [Instrukcja `continue`](#instrukcja-continue)
-  * [Metoda `zip(iterable1, iterable2, iterable3...)`](#metoda-zip-iterable1-iterable2-iterable3)
-  * [Metoda `filter(func, iterable)`](#metoda-filter-func-iterable)
+  * [Metoda `zip(iterable1, iterable2, iterable3...)`](#metoda-zipiterable1-iterable2-iterable3)
+  * [Metoda `filter(func, iterable)`](#metoda-filterfunc-iterable)
 - [Podsumowanie](#podsumowanie)
 
 ## Czym jest pętla?
