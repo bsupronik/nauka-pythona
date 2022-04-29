@@ -12,7 +12,7 @@ Podsumowanie: w poniższym artykule omawiamy pętle `for` oraz `while` w języku
 - [Pętla `while`](#pętla-while)
 - [Dodatkowe instrukcje oraz metody](#dodatkowe-instrukcje-oraz-metody)
   * [Metoda `range(start, stop, step)`](#metoda-rangestart-stop-step)
-  * [Metoda `enumerate(interable, start)`](##metoda-enumerateinterable-start)
+  * [Metoda `enumerate(interable, start)`](#metoda-enumerateinterable-start)
   * [Metoda `map(func, iterable)`](#metoda-mapfunc-iterable)
   * [Instrukcja `break`](#instrukcja-break)
   * [Instrukcja `continue`](#instrukcja-continue)
