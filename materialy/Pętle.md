@@ -1,4 +1,4 @@
-### Pętle w Pythonie
+# Pętle w Pythonie
 
 Podsumowanie: w poniższym artykule omawiamy pętle `for` oraz `while` w języku Python, ich przykładowe zastosowania oraz najbardziej przydatne instrukcje i metody używane przy iterowaniu.
 
@@ -16,6 +16,9 @@ Podsumowanie: w poniższym artykule omawiamy pętle `for` oraz `while` w języku
   * [Metoda `map(func, iterable)`](#metoda-mapfunc-iterable)
   * [Instrukcja `break`](#instrukcja-break)
   * [Instrukcja `continue`](#instrukcja-continue)
+  * [Instrukcja `else`](#instrukcja-else)
+    + [W pętli `for`](#w-pętli-for)
+    + [W pętli `while`](#w-pętli-while)
   * [Metoda `zip(iterable1, iterable2, iterable3...)`](#metoda-zipiterable1-iterable2-iterable3)
   * [Metoda `filter(func, iterable)`](#metoda-filterfunc-iterable)
 - [Podsumowanie](#podsumowanie)
@@ -407,6 +410,79 @@ Wynik:
 7
 8
 9
+```
+
+### Instrukcja `else`
+Podobnie jak instrukcja `if`, pętle `for` oraz `while` w Pythonie mogą posiadać instrukcję `else`. 
+#### W pętli `for`
+W przypadku pętli `for`, instrukcja `else` wykona się jednokrotnie, jeśli pętla zakończy się w sposób normalny, czyli nie napotka podczas wykonywania instrukcji `break`.
+
+Prosta pętla `for` przeszukująca ciąg znaków 'Python' w poszukiwaniu litery 'y':
+```python
+name = 'Python'
+for char in name:
+    if char == 'y':
+        print("Znaleziono literę 'y'.")
+        break
+else:
+    print("Nie znaleziono litery 'y' w podanym ciągu znaków.")
+```
+Wynik:
+```pycon
+Znaleziono literę 'y'.
+```
+Na powyższym przykładzie widzimy, że instrukcja `else` nie została wykonana, ponieważ pętla została przerwana przez `break`.
+
+Zastosujmy więc tę samą pętlę do ciągu znaków, który nie zawiera poszukiwanej litery:
+
+```python
+name = 'Java'
+for char in name:
+    if char == 'y':
+        print("Znaleziono literę 'y'.")
+        break
+else:
+    print("Nie znaleziono litery 'y' w podanym ciągu znaków.")
+```
+Wynik:
+```pycon
+Nie znaleziono litery 'y' w podanym ciągu znaków.
+```
+Jak łatwo się domyślić, tym razem instrukcja `else` została wykonana, ponieważ pętla wykonała wszystkie iteracje bez napotkania instrukcji `break`.
+
+#### W pętli `while`
+W przypadku pętli `while` instrukcja `else` wykona się jednokrotnie, kiedy warunek wykonywania pętli przyjmie wartość `False`. Innymi słowy, jeśli pętla wykona się normalnie, bez przedwczesnego jej przerwania instrukcją `break`.
+
+Stwórzmy pętlę `while`, która zostanie przerwana instrukcją `break` w momencie kiedy `i == 3`.
+```python
+i = 0
+while i < 5:
+    if i == 3:
+        print('Zmienna i == 3. Przerwanie pętli. Instrukcja else nie wykona się.')
+        break
+    i += 1
+else:
+    print('Warunek pętli przyjął wartość False.')
+```
+Wynik:
+```pycon
+Zmienna i == 3. Przerwanie pętli. Instrukcja else nie wykona się.
+```
+
+Teraz zobaczmy jak zachowa się pętla `while`, która wykona się bez przerwania przez `break`:
+```python
+i = 0
+while i < 5:
+    if i == 5:
+        print('Zmienna i == 5. Przerwanie pętli. Instrukcja else nie wykona się.')
+        break
+    i += 1
+else:
+    print('Warunek pętli przyjął wartość False.')
+```
+Wynik:
+```pycon
+Warunek pętli przyjął wartość False.
 ```
 
 ### Metoda `zip(iterable1, iterable2, iterable3...)`
