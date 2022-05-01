@@ -4,3 +4,4 @@
 2. [Zmienne mutowalne i niemutowalne](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Mutowalne%20i%20niemutowalne%20typy%20zmiennych.md)
 3. [Odczyt i zapis plików](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Odczyt%20i%20zapis%20plików.md)
 4. [Pętle](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Pętle.md)
+5. [Instrukcje warunkowe `if`](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Instrukcje%20warunkowe%20if.md)
