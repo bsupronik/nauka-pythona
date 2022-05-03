@@ -6,3 +6,4 @@
 3. [Odczyt i zapis plików](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Odczyt%20i%20zapis%20plików.md)
 4. [Pętle](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Pętle.md)
 5. [Instrukcje warunkowe `if`](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Instrukcje%20warunkowe%20if.md)
+6. [Odwzorowywanie list](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Odwzorowywanie%20list.md)
