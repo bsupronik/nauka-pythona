@@ -5,7 +5,7 @@ Podsumowanie: poniższy artykuł omawia `List comprehension` czyli `odwzorowywan
 
 ## Spis treści
 - [Czym jest odwzorowywanie list?](#czym-jest-odwzorowywanie-list)
-- [Pojedyncza pętla](#pojedyncza-petla)
+- [Pojedyncza pętla](#pojedyncza-pętla)
 - [Zagnieżdżona pętla](#zagnieżdżona-pętla)
 - [Instrukcja `if`](#instrukcja-if)
 - [Instrukcja `if...else`](#instrukcja-ifelse)
@@ -164,7 +164,7 @@ Wynik:
 ['red', 'green', 'blue', 'yellow']
 ```
 
-Ten sam efekt osiągniemy stosując wersję skróconą:
+Ten sam efekt osiągniemy, stosując wersję skróconą:
 ```python
 colors = ['red', 'green', 'blue', 'orange']
 new_colors = ['yellow' if element == 'orange' else element for element in colors]
