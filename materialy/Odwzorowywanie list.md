@@ -182,7 +182,7 @@ nowa_lista = [wyrażenie_1 if warunek else wyrażenie_2 for element in obiekt_it
 
 ## Zagnieżdżone odwzorowania
 
-Przy odwzorowaniu list, w miejscu wyrażenia możemy wstawić dowolną konstrukcję zwracającą wartość. Oznacza to, że możemy tam również wstawić inne odwzorowanie listy. Poniższy przykład pokazuje transpozycję matrycy liczb za pomocą odwzorowania zagnieżdżonego.
+Przy odwzorowaniu list, w miejscu wyrażenia możemy wstawić dowolną konstrukcję zwracającą wartość. Oznacza to, że możemy tam również wstawić inne odwzorowanie listy. Poniższy przykład pokazuje transpozycję macierzy liczb za pomocą odwzorowania zagnieżdżonego.
 
 ```python
 matrix = [
