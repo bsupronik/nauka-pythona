@@ -10,8 +10,8 @@ Podsumowanie: w poniższym artykule omawiamy definiowanie własnych funkcji wraz
 - [Instrukcja `return`](#instrukcja-return)
 - [Argumenty w funkcjach](#argumenty-w-funkcjach)
   * [Stała liczba argumentów](#stała-liczba-argumentów)
-  * [Argumenty pozycyjne - `*args`](#argumenty-pozycyjne-args)
-  * [Argumenty z nazwą - `**kwargs`](#argumenty-z-nazwą-kwargs)
+  * [Argumenty pozycyjne - `*args`](#argumenty-pozycyjne---args)
+  * [Argumenty z nazwą - `**kwargs`](#argumenty-z-nazwą---kwargs)
   * [Rozpakowywanie list i słowników](#rozpakowywanie-list-i-słowników)
 - [Funkcja jako obiekt](#funkcja-jako-obiekt)
 - [`lambda`](#lambda)
@@ -20,7 +20,7 @@ Podsumowanie: w poniższym artykule omawiamy definiowanie własnych funkcji wraz
   * [Zagnieżdżenie w innej funkcji](#zagnieżdżenie-w-innej-funkcji)
   * [`lambda` jako argument funkcji](#lambda-jako-argument-funkcji)
 - [Local, global, nonlocal](#local-global-nonlocal)
-  * [Zmienne globalne (global) i lokalne (local)](#zmienne-globalneglobal-i-lokalnelocal)
+  * [Zmienne globalne (global) i lokalne (local)](#zmienne-globalne-global-i-lokalne-local)
   * [Wyrażenie `nonlocal`](#wyrażenie-nonlocal)
 
 
