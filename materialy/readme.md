@@ -6,3 +6,4 @@
 4. [Pętle](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Pętle.md)
 5. [Instrukcje warunkowe `if`](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Instrukcje%20warunkowe%20if.md)
 6. [Odwzorowywanie list](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Odwzorowywanie%20list.md)
+7. [Funkcje](https://github.com/bsupronik/nauka-pythona/blob/main/materialy/Funkcje.md)
